@@ -1,0 +1,264 @@
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0; padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth; /*Sel-Explanatory, nicer scrollling in the sections*/
+}
+
+body {
+    background: #FFA22A;
+}
+
+header {
+    background: #4F3F84;
+    position: sticky;
+    top: 0; z-index: 1000;
+    height: 60px; width: 100%;
+    border-radius: 3px;
+    text-align: right;
+    padding: 18px 20px;
+}
+
+nav {
+    text-align: right;
+}
+
+.nav-link {
+    background: none; /*ONGs Bugged out after the dropdown tab, this fixes it tho, don't touch this!!*/
+    border: none;
+    color: #82AC26;
+    margin-right: 20px;
+    padding: 10px;
+    border-radius: 3px;
+    transition: background 0.3s;
+}
+
+.nav-link:hover {
+    background: #251c44;
+}
+
+/*Accordion Stuff for the ONGs Section, This is So Hard AKDJWKJD*/
+.accordion-section {
+    display: none;
+    background: #7145A3;
+}
+
+.show {
+    display: block;
+}
+
+.accordion-content {
+    text-align: right;
+}
+
+.accordion-content .nav-link {
+    background: none;
+    border: none;
+    border-radius: 3px;
+    margin-right: 20px;
+    padding: 10px;
+    transition: background 0.3s;
+}
+
+.accordion-content .nav-link:hover {
+    background: #251c44;
+}
+
+/*Start and Login Stuff*/
+#inicio {
+    background: #FFA22A;
+    padding: 40px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap; /*Note to Self: Don't touch this, it makes the login and text stay side by side*/
+    justify-content: center;
+}
+
+.motto-container {
+    max-width: 400px;
+    margin-right: 20px; 
+}
+
+.motto {
+    color: #FFF; /*I know it's supposed to be the green but it looks ugly on the orange, keeping it as white*/
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.info-text {
+    color: #FFF;
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.login-container {
+    width: 600px;
+    background: #FF662A;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    color: #FFF;
+    margin-bottom: 8px;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #FFF;
+    border-radius: 3px;
+}
+
+button {
+    background: #82AC26;
+    color: #FFF;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #4F3F84;
+}
+
+#quienes-somos {
+    background: #ffad2a; /*Goes Against Restrictions Again, but it looks so nice waaaa*/
+    padding: 40px;
+    text-align: center;
+}
+
+.section-header {
+    color: #FFF;
+    font-size: 48px;
+    margin-bottom: 40px;
+}
+
+.content-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.full-width-text {
+    margin-bottom: 40px;
+}
+
+.full-width-text h3 {
+    color: #FFF;
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.full-width-text p {
+    color: #FFF;
+    font-size: 18px;
+}
+
+.mv-colums-text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mv-colums-text .mision,
+.mv-colums-text .vision {
+    flex: 1;
+    max-width: 48%;
+}
+
+.mv-colums-text h3 {
+    color: #FFF;
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.mv-colums-text p {
+    color: #FFF;
+    font-size: 18px;
+}
+
+footer {
+    background: #4F3F84;
+    color: #82AC26;
+    padding: 40px;
+    text-align: center;
+}
+
+.contact-section {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#contact-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.form-row input {
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.form-row label {
+    flex: 1;
+    text-align: right;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+/*These just put the buttons next to each other yipeee ^-^*/
+.form-row .form-email {
+    flex: 3;
+    margin-right: 10px;
+}
+.form-row .form-phone {
+    flex: 1;
+}
+.form-row .form-dni {
+    flex: 1;
+    margin-right: 10px;
+}
+.form-row .form-ong {
+    flex: 3;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #FFF;
+    border-radius: 3px;
+}
+
+button {
+    background: #82AC26;
+    color: #FFF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #4F3F84;
+}
